@@ -8,7 +8,7 @@ interface BlockComponentProps {
 }
 
 const BlockComponent: React.FC<BlockComponentProps> = ({ title, color }) => (
-  <Container color={color}>
+  <Container id={title} color={color}>
     <Title>
       {title}
     </Title>

@@ -1891,6 +1891,13 @@
   "resolved" "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz"
   "version" "1.5.4"
 
+"@types/react-anchor-link-smooth-scroll@^1.0.1":
+  "integrity" "sha512-SPB+u1AK8y0tMsTRYRPXPy53rDU/GtaIoWhrrsuVzum0QTIWBztxuWI4DRuiUBpeEUqUO4qk58an9hSTk/5BLg=="
+  "resolved" "https://registry.npmjs.org/@types/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^17.0.0":
   "integrity" "sha512-Wd5xvZRlccOrCTej8jZkoFZuZRKHzanDDv1xglI33oBNFMWrqOSzrvWFw7ngSiZjrpJAzPKFtX7JvuXpkNmQHA=="
   "resolved" "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.7.tgz"
@@ -9429,6 +9436,11 @@
     "http-errors" "1.7.2"
     "iconv-lite" "0.4.24"
     "unpipe" "1.0.0"
+
+"react-anchor-link-smooth-scroll@^1.0.12":
+  "integrity" "sha512-aaY+9X0yh8YnC0jBfoTKpsiCLdO/Y6pCltww+VB+NnTBPDOvnIdnp1AlazajsDitc1j+cVSQ+yNtaVeTIMQbxw=="
+  "resolved" "https://registry.npmjs.org/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.12.tgz"
+  "version" "1.0.12"
 
 "react-app-polyfill@^2.0.0":
   "integrity" "sha512-0sF4ny9v/B7s6aoehwze9vJNWcmCemAUYBVasscVr92+UYiEqDXOxfKjXN685mDaMRNF3WdhHQs76oTODMocFA=="
