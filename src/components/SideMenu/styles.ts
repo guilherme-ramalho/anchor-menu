@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface ISectionItem {
+  active: boolean;
+}
+
 export const Navigation = styled.nav`
   display: flex;
   flex-direction: column;
@@ -17,13 +21,13 @@ export const List = styled.ul`
   padding: 0px;
 `;
 
-export const SectionItem = styled.li`
+export const SectionItem = styled.li<ISectionItem>`
   height: 30px;
   margin: 20px 0;
 
   a {
     transition: all .3s;
-    color: #fff;
+    color: ${({ active }) => active ? '#ff00af' : '#fff'};
     font-size: 22px;
     text-decoration: none;
   }

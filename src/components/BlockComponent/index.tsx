@@ -1,18 +1,22 @@
 import React from 'react';
+import { ISection } from '../shared/interfaces/section.interface';
 
 import { Container, Title } from './styles';
 
-interface BlockComponentProps {
-  title: string;
-  color: string;
+interface IBlockComponentProps {
+  data: ISection;
 }
 
-const BlockComponent: React.FC<BlockComponentProps> = ({ title, color }) => (
-  <Container id={title} color={color}>
-    <Title>
-      {title}
-    </Title>
-  </Container>
-)
+const BlockComponent: React.FC<IBlockComponentProps> = ({ data }) => {
+  const { id, title, color } = data;
+  
+  return (
+    <Container id={id} color={color}>
+      <Title>
+        {title}
+      </Title>
+    </Container>
+  );
+}
 
 export default BlockComponent;

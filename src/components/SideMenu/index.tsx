@@ -5,12 +5,16 @@ import { Navigation, SectionItem, List } from './styles';
 
 import SectionData from '../../data/sections.json';
 
-const SideMenu: React.FC = () => (
+interface ISideMenuProps {
+  visibleSection: string | undefined;
+}
+
+const SideMenu: React.FC<ISideMenuProps> = ({ visibleSection }) => (
   <Navigation>
     <List>
-      {SectionData.map(({ title }) => (
-        <SectionItem key={title}>
-          <AnchorLink href={`#${title}`}>{title}</AnchorLink>
+      {SectionData.map(({ id, title }) => (
+        <SectionItem key={id} active={visibleSection === id}>
+          <AnchorLink href={`#${id}`}>{title}</AnchorLink>
         </SectionItem>
       ))}
     </List>
