@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { throttle } from 'lodash';
-import { ISection } from '../components/shared/interfaces/section.interface';
+import { ISection } from '../shared/interfaces/section.interface';
 
 export function useVisibleSection(sections: Array<ISection>) {
   const [visibleSection, setVisibleSection] = useState<string | undefined>()

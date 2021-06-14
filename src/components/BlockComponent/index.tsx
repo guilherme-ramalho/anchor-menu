@@ -1,5 +1,5 @@
 import React from 'react';
-import { ISection } from '../shared/interfaces/section.interface';
+import { ISection } from '../../shared/interfaces/section.interface';
 
 import { Container, Title } from './styles';
 
