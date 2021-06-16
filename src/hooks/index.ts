@@ -11,7 +11,7 @@ export function useVisibleSection(sections: Array<ISection>) {
     if (section) {
       const sectionPosition = section.getBoundingClientRect();
 
-      const viewPortPosition = {
+      const viewPort = {
         height:
           window.innerHeight ||
           document.documentElement.clientHeight ||
@@ -25,8 +25,8 @@ export function useVisibleSection(sections: Array<ISection>) {
       return (
         sectionPosition.top >= 0 &&
         sectionPosition.left >= 0 &&
-        sectionPosition.bottom <= viewPortPosition.height &&
-        sectionPosition.right <= viewPortPosition.width
+        sectionPosition.bottom <= viewPort.height &&
+        sectionPosition.right <= viewPort.width
       );
     }
 
