@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 
   return (
     <Grid>
-      <SideMenu visibleSection={visibleSection} />
+      <SideMenu visibleSection={visibleSection} menuItems={SectionData} />
       <BlockContainer>
         {SectionData.map((data) => (
           <BlockComponent key={data.id} data={data} />

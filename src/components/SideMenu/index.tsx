@@ -3,16 +3,18 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import { Navigation, SectionItem, List } from './styles';
 
-import SectionData from '../../data/sections.json';
-
 interface ISideMenuProps {
   visibleSection: string | undefined;
+  menuItems: Array<{
+    id: string,
+    title: string
+  }>
 }
 
-const SideMenu: React.FC<ISideMenuProps> = ({ visibleSection }) => (
+const SideMenu: React.FC<ISideMenuProps> = ({ visibleSection, menuItems }) => (
   <Navigation>
     <List>
-      {SectionData.map(({ id, title }) => (
+      {menuItems.map(({ id, title }) => (
         <SectionItem key={id} active={visibleSection === id}>
           <AnchorLink href={`#${id}`}>{title}</AnchorLink>
         </SectionItem>
