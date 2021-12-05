@@ -3,11 +3,11 @@ import { ISection } from '../../shared/interfaces/section.interface';
 
 import { Container, Title } from './styles';
 
-interface IBlockComponentProps {
+interface ISectionProps {
   data: ISection;
 }
 
-const BlockComponent: React.FC<IBlockComponentProps> = ({ data }) => {
+const Section: React.FC<ISectionProps> = ({ data }) => {
   const { id, title, color } = data;
   
   return (
@@ -19,4 +19,4 @@ const BlockComponent: React.FC<IBlockComponentProps> = ({ data }) => {
   );
 }
 
-export default BlockComponent;
+export default Section;

@@ -3,7 +3,7 @@ import React from 'react';
 import { Grid, BlockContainer } from './styles';
 
 import SideMenu from '../../components/SideMenu';
-import BlockComponent from '../../components/BlockComponent';
+import Section from '../../components/Section';
 
 import SectionData from '../../data/sections.json';
 import { useVisibleSection } from '../../hooks';
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
       <SideMenu visibleSection={visibleSection} menuItems={SectionData} />
       <BlockContainer>
         {SectionData.map((data) => (
-          <BlockComponent key={data.id} data={data} />
+          <Section key={data.id} data={data} />
         ))}
       </BlockContainer>
     </Grid>
