@@ -12,14 +12,8 @@ export function useVisibleSection(sections: Array<ISection>) {
       const sectionPosition = section.getBoundingClientRect();
 
       const viewPort = {
-        height:
-          window.innerHeight ||
-          document.documentElement.clientHeight ||
-          document.body.clientHeight,
-        width:
-          window.innerWidth ||
-          document.documentElement.clientWidth ||
-          document.body.clientWidth,
+        height: window.innerHeight,
+        width: window.innerWidth,
       };
 
       return (
@@ -34,8 +28,6 @@ export function useVisibleSection(sections: Array<ISection>) {
   };
 
   const checkVisibility = () => {
-    // const currentVisibleAnchors = [];  
-
     sections.forEach(({ id }) => {
       if (isSectionVisible(id)) {
         setVisibleSection(id); 
